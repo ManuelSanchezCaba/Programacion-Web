@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #3</title>
+	</head>
+	<body>
+		<h3>Ejemplo de formularios</h3>
+		<form method="GET" enctype="text/plain">
+			<table>
+				<tr>
+					<td>Digita tu nombre y apellidos:&nbsp;</td>
+					<td><input type="text" name="nombre" size="40" maxlength="40" /></td>
+				</tr>
+				<tr>
+					<td>Elije un tema:</td>
+					<td>
+						<input type="radio" name="tema" value="ciencia" checked />ciencia
+						<input type="radio" name="tema" value="arte" />arte
+						<input type="radio" name="tema" value="literatura" />literatura
+					</td>
+				</tr>
+				<tr>
+					<td>Marca tus aficiones:</td>
+					<td>
+						<input
+							type="checkbox"
+							name="aficion"
+							value="deporte"
+							checked
+						/>Deporte
+						<input
+							type="checkbox"
+							name="aficion"
+							value="musica"
+							checked
+						/>M&uacute;sica
+						<input type="checkbox" name="aficion" value="lectura" />Lectura
+						<input type="checkbox" name="aficion" value="pesca" />Pesca
+						<input type="checkbox" name="aficion" value="pasear" />Pasear
+						<input type="checkbox" name="aficion" value="cine" />Cine
+					</td>
+				</tr>
+				<tr>
+					<td>Digita la contrase&ntilde;a de usuario:&nbsp;</td>
+					<td>
+						<input type="password" name="password" size="10" maxlength="10" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="enviar datos" />
+						<input type="reset" value="borrar datos" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

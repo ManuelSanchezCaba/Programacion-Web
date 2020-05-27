@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Segundo formulario</title>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			.container {
+				border: 2px solid #ffff66;
+				width: 600px;
+				margin: auto;
+			}
+			h1 {
+				margin: 0;
+			}
+			h3 {
+				margin-bottom: 0;
+			}
+			table {
+				margin-bottom: 2em;
+			}
+			.submits {
+				padding: 5px;
+			}
+			.btn {
+				background-color: gray;
+				color: black;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Libro de Visitas</h1>
+			<form
+				action="mailto:20155872@ce.pucmm.edu.do"
+				method="POST"
+				enctype="text/plain"
+				name="miformulario"
+			>
+				<h3>Datos personales:</h3>
+				<label for="">Nombre:</label>
+				<input type="text" name="nombre" />
+				<br />
+				<label for="">Apellidos:</label>
+				<input type="text" name="apellido" />
+
+				<h3>Indica un psudónimo y una contraseña:</h3>
+				<label for="">Pseudónimo:</label>
+				<input type="text" maxlength="16" name="pse" size="8" />
+
+				<label for="">Contraseña:</label>
+				<input type="password" maxlength="12" name="password" size="6" />
+
+				<h3>Otros datos:</h3>
+				<table>
+					<tr>
+						<td>Edad:</td>
+						<td>¿Dónde vives?</td>
+						<td>Aficiones:</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio" value="cero" />0-10</td>
+						<td>
+							<input type="radio" name="radio1" value="Santiago" />Santiago
+						</td>
+						<td>
+							<input type="checkbox" name="Musica" value="Musica" />Música
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio" value="once" />11-20</td>
+						<td>
+							<input type="radio" name="radio1" value="Santo Domingo" />Santo
+							Domingo
+						</td>
+						<td>
+							<input type="checkbox" name="Deportes" value="Deportes" />Deportes
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio" value="veinte" />21-30</td>
+						<td>
+							<input type="radio" name="radio1" value="La Romana" />La Romana
+						</td>
+						<td>
+							<input type="checkbox" name="Pintura" value="Pintura" />Pintura
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio" value="treinta" />31-40</td>
+						<td>
+							<input type="radio" name="radio1" value="San Cristobal" />San
+							Cristóbal
+						</td>
+						<td>
+							<input type="checkbox" name="Lectura" value="Lectura" />Lectura
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="radio" name="radio" value="cuarenta" />41 o más
+						</td>
+						<td>
+							<input type="radio" name="radio1" value="Otros" />Otros:
+							<input type="text" name="otros1" />
+						</td>
+						<td>
+							<input type="checkbox" name="Otras" value="Otras" />Otras:
+							<input type="text" name="otras1" />
+						</td>
+					</tr>
+				</table>
+				<div class="submits">
+					<input type="submit" value="Enviar" alt="Enviar" class="btn" />
+					<input type="reset" value="Restaurar" class="btn" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

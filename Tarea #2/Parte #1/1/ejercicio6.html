@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #6</title>
+		<style>
+			body {
+				background-color: #c0fff0;
+			}
+			label {
+				font-family: Verdana;
+				font-style: oblique;
+				font-weight: bold;
+				font-size: 10pt;
+				color: #205020;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="">
+			<table>
+				<tr>
+					<td>
+						<p>
+							<label for="">Nombre:</label>
+						</p>
+					</td>
+					<td>
+						<input type="text" name="name" required autofocus tabindex="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">E-mail:</label>
+						</p>
+					</td>
+					<td>
+						<input
+							type="email"
+							name="email"
+							required
+							tabindex="3"
+							value="lenguaje@gmail.com"
+							readonly
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">URL:</label>
+						</p>
+					</td>
+					<td><input type="url" name="url" tabindex="2" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">Edad:</label>
+						</p>
+					</td>
+					<td>
+						<input type="number" name="edad" min="1" max="90" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">Fecha:</label>
+						</p>
+					</td>
+					<td><input type="date" name="fecha" size="20" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">Mes:</label>
+						</p>
+					</td>
+					<td><input type="month" name="mes" size="20" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<label for="">Comentario: </label>
+						</p>
+					</td>
+					<td><textarea name="comment" required></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<p><input type="submit" value="Enviar" /></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

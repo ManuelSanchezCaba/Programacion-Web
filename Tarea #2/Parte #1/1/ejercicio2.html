@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #2</title>
+		<style>
+			table .tabla1 {
+				font-family: 'Trebuchet MS', sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 1.4em;
+				font-style: normal;
+				border-collapse: separate;
+				margin: auto;
+			}
+			.tabla1 th {
+				padding: 15px;
+				color: #fff;
+				text-shadow: 1px 1px 1px #568f23;
+				border: 1px solid #93ce37;
+				border-bottom: 3px solid #9ed929;
+				background-color: #9dd929;
+				background: -moz-linear-gradient(top, #65b6cf, #2c2c2c);
+				background: -webkit-linear-gradient(
+					0 0,
+					0 100%,
+					from(#65b6cf),
+					to(#2c2c2c)
+				);
+				-webkit-border-top-left-radius: 5px;
+				-webkit-border-top-right-radius: 5px;
+				-moz-border-radius: 5px 5px 0px 0px;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+			.tabla1 thead th:empty {
+				background: transparent;
+				border: none;
+			}
+			.tabla1 tfoot td {
+				color: #9cd009;
+				font-size: 32px;
+				text-align: center;
+				padding: 10px 0px;
+				text-shadow: 1px 1px 1px #444;
+			}
+			.tabla1 tbody td {
+				padding: 10px;
+				text-align: center;
+				background-color: #def3ca;
+				border: 2px solid #e7efe0;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				color: #666;
+				text-shadow: 1px 1px 1px #fff;
+			}
+			.tabla1 tbody span .check::before {
+				content: url(images/check.jpg);
+			}
+		</style>
+	</head>
+	<body>
+		<table class="tabla1">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Smart Starter</th>
+					<th>Smart Medium</th>
+					<th>Smart Business</th>
+					<th>Smart Deluxe</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>Precio por mes</th>
+					<td>$ 2.90</td>
+					<td>$ 5.90</td>
+					<td>$ 9.90</td>
+					<td>$14.90</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th>Almacenamientos</th>
+					<td>512 MB</td>
+					<td>1 GB</td>
+					<td>2 GB</td>
+					<td>4 GB</td>
+				</tr>
+				<tr>
+					<th>Ancho de banda</th>
+					<td>50 GB</td>
+					<td>100 GB</td>
+					<td>150 GB</td>
+					<td>Ilimitado</td>
+				</tr>
+				<tr>
+					<th>Base de datos MySQL</th>
+					<td>Ilimitado</td>
+					<td>Ilimitado</td>
+					<td>Ilimitado</td>
+					<td>Ilimitado</td>
+				</tr>
+				<tr>
+					<th>Actualizaciones</th>
+					<td>$19.90</td>
+					<td>$12.90</td>
+					<td>libres</td>
+					<td>libres</td>
+				</tr>
+				<tr>
+					<th>PHP 5</th>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+				</tr>
+				<tr>
+					<th>Ruby on Rails</th>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+					<td><span class="check"></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

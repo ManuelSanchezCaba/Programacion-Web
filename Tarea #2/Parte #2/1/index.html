@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Primer formulario</title>
+		<style>
+			.color {
+				background-color: #ffffcc;
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="color">
+			<form
+				action="mailto:20155872@ce.pucmm.edu.do"
+				method="POST"
+				enctype="text/plain"
+			>
+				<table>
+					<tr>
+						<td>
+							<label for="">Escribe tu nombre</label>
+							<input type="text" maxlength="20" size="20" name="nombre" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">Introduce tu contraseña</label>
+							<input type="password" name="password" id="password" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">Enviame una foto tuya</label>
+							<input type="text" name="imagen" id="imagen" />
+							<input
+								type="image"
+								name="imagenS"
+								id="imagenS"
+								value="Examinar..."
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">Este manual te parece:</label><br />
+							<input type="radio" name="calif" value="MuyBueno" checked />Muy
+							Bueno<br />
+							<input type="radio" name="calif" value="Bueno" />Bueno<br />
+							<input type="radio" name="calif" value="Malo" />Malo<br />
+							<input type="radio" name="calif" value="MuyMalo" />Muy Malo
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input
+								type="checkbox"
+								name="avisar"
+								value="avisar"
+								checked
+							/>Avisarme de actualizaciones
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" value="Enviar" alt="Enviar" />
+							<input type="reset" value="Borrar" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

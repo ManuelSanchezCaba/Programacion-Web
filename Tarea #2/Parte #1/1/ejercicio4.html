@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #4</title>
+		<style type="text/css">
+			body {
+				background-color: #5c4033;
+				color: #ccafaf;
+			}
+			h1 {
+				text-align: center;
+				font-size: 20pt;
+			}
+			hr {
+				background-color: #ccafaf;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Datos personales</h1>
+		<hr size="5" />
+		<br /><br />
+		Llena el siguiente formulario con los datos que se solicitan, por favor:
+		<form
+			action="mailto:materialic2019@gmail.com"
+			method="POST"
+			enctype="text/plain"
+		>
+			<table>
+				<tr>
+					<td><b>Nombre: </b></td>
+					<td><input type="text" maxlength="20" size="15" name="nombre" /></td>
+				</tr>
+				<tr>
+					<td><b>Apellido</b></td>
+					<td>
+						<input type="text" maxlength="20" size="15" name="apellido" />
+					</td>
+				</tr>
+				<tr>
+					<td><b>Nacionalidad: </b></td>
+					<td>
+						<select>
+							<option value="Salvadoreño">Salvadore&ntilde;o(a)</option>
+							<option value="Hondureño">Hondure&ntilde;o(a)</option>
+							<option value="Guatelmateco">Guatelmateco(a)</option>
+							<option value="Costarricense">Costarricense</option>
+							<option value="Nicaraguense">Nicarag&uuml;ense</option>
+							<option value="Panameño">Paname&ntilde;o</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Sexo: </b></td>
+					<td>
+						<input type="radio" name="sexo" value="mas" checked /><b
+							>Masculino</b
+						><br />
+						<input type="radio" name="sexo" value="fem" /><b>Femenino</b>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Direcci&oacute;n: </b></td>
+					<td>
+						<input type="text" maxlength="40" size="30" name="direccion" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input
+							type="image"
+							name="botonenviar"
+							src="imagenes/boton1.gif"
+							alt="Enviar formulario"
+						/>
+						<input type="reset" name="botoncancelar" value="Restablecer" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

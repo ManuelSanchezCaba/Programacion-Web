@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #5</title>
+		<link rel="stylesheet" href="css/EstiloForm.css" />
+	</head>
+	<body>
+		<div id="stylized" class="myform">
+			<form action="enviado.html" method="POST" name="form" id="form">
+				<h1>Formulario de Registro</h1>
+				<table>
+					<tr>
+						<td><p>Llenar los siguientes campos:</p></td>
+					</tr>
+					<tr>
+						<td>
+							<label for=""
+								>Nombre<span class="small">Agregue su nombre</span></label
+							>
+						</td>
+						<td><input type="text" name="name" id="name" /></td>
+					</tr>
+					<tr>
+						<td>
+							<label for=""
+								>Año de nacimiento
+								<span class="small"
+									>Seleccione su año de nacimiento</span
+								></label
+							>
+						</td>
+						<td><input type="number" name="nacido" min="1900" /></td>
+					</tr>
+					<tr>
+						<td>
+							<label for=""
+								>Email <span class="small">Agregue un email válido</span></label
+							>
+						</td>
+						<td><input type="text" name="email" id="email" /></td>
+					</tr>
+					<tr>
+						<td>
+							<label for=""
+								>Password <span class="small">Min. 6 caracteres</span></label
+							>
+						</td>
+						<td><input type="password" name="password" id="password" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="right">
+							<button type="submit">Enviar datos</button>
+							<div class="spacer"></div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
