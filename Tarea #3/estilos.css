@@ -1,0 +1,36 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+
+.post .post-title a {
+	color: #333;
+}
+
+.post .thumb {
+	margin-right: 10px;
+	width: 40%;
+}
+
+.post .thumb img {
+	width: 100%;
+}
+
+.post .contenedor-botones {
+	width: 100%;
+}
