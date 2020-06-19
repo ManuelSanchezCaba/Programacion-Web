@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parte #2</title>
+	</head>
+	<body>
+		<script>
+			var num = prompt('Ingrese un número');
+
+			if (num < 1000) {
+				if (num < 10) document.write('El número es de 1 dígito');
+				else if (num >= 10 && num < 100)
+					document.write('El número es de 2 dígitos');
+				else if (num >= 100 && num < 1000)
+					document.write('El número es de 3 dígitos');
+			} else {
+				document.write('No se permite un número mayor de 3 dígitos');
+			}
+		</script>
+	</body>
+</html>

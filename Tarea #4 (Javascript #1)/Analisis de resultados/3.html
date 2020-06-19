@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parte #3</title>
+	</head>
+	<body>
+		<script>
+			var num1 = prompt('Ingrese el primer número');
+			var num2 = prompt('Ingrese el segundo número');
+
+			if (num1 > num2) {
+				var suma = parseInt(num1) + parseInt(num2);
+				var resta = parseInt(num1) - parseInt(num2);
+				document.write('La suma es de ' + suma + '<br>');
+				document.write('La resta es de ' + resta + '<br>');
+			} else {
+				var mult = parseInt(num1) * parseInt(num2);
+				var div = parseInt(num1) / parseInt(num2);
+				document.write('La multiplicación es de ' + mult + '<br>');
+				document.write('La división es de ' + div + '<br>');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<title>Tarea #4 (2)</title>
+	</head>
+	<body>
+		<div class="container mt-4">
+			<div class="form-group">
+				<div class="border border-secondary p-2 mb-2">
+					<div id="texto"><b>Primer Triángulo</b></div>
+					<div class="row mt-2">
+						<div class="col">
+							<label for="number1">Lado uno</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number1"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number2">Lado dos</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number2"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number3">Lado tres</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number3"
+								value="1"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="border border-secondary p-2 mb-2">
+					<div id="texto"><b>Segundo Triángulo</b></div>
+					<div class="row mt-2">
+						<div class="col">
+							<label for="number4">Lado uno</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number4"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number5">Lado dos</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number5"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number6">Lado tres</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number6"
+								value="1"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="border border-secondary p-2 mb-2">
+					<div id="texto"><b>Tercer Triángulo</b></div>
+					<div class="row mt-2">
+						<div class="col">
+							<label for="number7">Lado uno</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number7"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number8">Lado dos</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number8"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number9">Lado tres</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number9"
+								value="1"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="border border-secondary p-2 mb-2">
+					<div id="texto"><b>Cuarto Triángulo</b></div>
+					<div class="row mt-2">
+						<div class="col">
+							<label for="number10">Lado uno</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number10"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number11">Lado dos</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number11"
+								value="1"
+							/>
+						</div>
+
+						<div class="col">
+							<label for="number12">Lado tres</label>
+							<input
+								type="number"
+								class="form-control"
+								id="number12"
+								value="1"
+							/>
+						</div>
+					</div>
+				</div>
+				<button class="btn btn-primary mb-2" onclick="funcion()">
+					Calcular los triangulos
+				</button>
+			</div>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			var funcion = function () {
+				var number1 = document.getElementById('number1').value;
+				var number2 = document.getElementById('number2').value;
+				var number3 = document.getElementById('number3').value;
+				var number4 = document.getElementById('number4').value;
+				var number5 = document.getElementById('number5').value;
+				var number6 = document.getElementById('number6').value;
+				var number7 = document.getElementById('number7').value;
+				var number8 = document.getElementById('number8').value;
+				var number9 = document.getElementById('number9').value;
+				var number10 = document.getElementById('number10').value;
+				var number11 = document.getElementById('number11').value;
+				var number12 = document.getElementById('number12').value;
+				var Count1 = 0,
+					Count2 = 0,
+					Count3 = 0;
+
+				if (number1 == number2 && number2 == number3) {
+					document.write('El primer triángulo es equilátero <br>');
+					Count1++;
+				} else if (
+					number1 == number2 ||
+					number2 == number3 ||
+					number1 == number3
+				) {
+					document.write('El primer triángulo es isósceles <br>');
+					Count2++;
+				} else {
+					document.write('El primer triángulo es escaleno <br>');
+					Count3++;
+				}
+
+				if (number4 == number5 && number5 == number6) {
+					document.write('El segundo triángulo es equilátero <br>');
+					Count1++;
+				} else if (
+					number4 == number5 ||
+					number5 == number6 ||
+					number4 == number6
+				) {
+					document.write('El segundo triángulo es isósceles <br>');
+					Count2++;
+				} else {
+					document.write('El segundo triángulo es escaleno <br>');
+					Count3++;
+				}
+
+				if (number7 == number8 && number8 == number9) {
+					document.write('El tercer triángulo es equilátero <br>');
+					Count1++;
+				} else if (
+					number7 == number8 ||
+					number8 == number9 ||
+					number7 == number9
+				) {
+					document.write('El tercer triángulo es isósceles <br>');
+					Count2++;
+				} else {
+					document.write('El tercer triángulo es escaleno <br>');
+					Count3++;
+				}
+
+				if (number10 == number11 && number11 == number12) {
+					document.write('El cuarto triángulo es equilátero <br>');
+					Count1++;
+				} else if (
+					number10 == number11 ||
+					number11 == number12 ||
+					number10 == number12
+				) {
+					document.write('El cuarto triángulo es isósceles <br>');
+					Count2++;
+				} else {
+					document.write('El cuarto triángulo es escaleno <br>');
+					Count3++;
+				}
+
+				document.write('Hay ' + Count1 + ' triangulos equilátero <br>');
+				document.write('Hay ' + Count2 + ' triangulos isósceles <br>');
+				document.write('Hay ' + Count3 + ' triangulos escaleno <br>');
+
+				if (Count1 <= Count2 && Count1 <= Count3)
+					document.write(
+						'El triángulo equilátero es el que tiene menor cantidad <br>'
+					);
+				if (Count2 <= Count1 && Count2 <= Count3)
+					document.write(
+						'El triángulo isósceles es el que tiene menor cantidad <br>'
+					);
+				if (Count3 <= Count1 && Count3 <= Count2)
+					document.write(
+						'El triángulo escaleno es el que tiene menor cantidad <br>'
+					);
+			};
+		</script>
+	</body>
+</html>

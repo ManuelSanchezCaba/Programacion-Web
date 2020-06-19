@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parte #1</title>
+	</head>
+	<body>
+		<script>
+			var num1 = prompt('Ingrese el valor del número 1');
+			var num2 = prompt('Ingrese el valor del número 2');
+			var num3 = prompt('Ingrese el valor del número 3');
+
+			if (
+				num1 < 0 ||
+				num2 < 0 ||
+				num3 < 0 ||
+				num1 == num2 ||
+				num1 == num3 ||
+				num2 == num3
+			) {
+				document.write('No se permiten números negativos o repetidos');
+			} else {
+				if (num1 > num2 && num1 > num3)
+					document.write(
+						'El mayor de los tres números es el 1 con el valor de: ' +
+							num1 +
+							'<br>'
+					);
+				else if (num2 > num1 && num2 > num3)
+					document.write(
+						'El mayor de los tres números es el 2 con el valor de: ' +
+							num2 +
+							'<br>'
+					);
+				else if (num3 > num1 && num3 > num2)
+					document.write(
+						'El mayor de los tres números es el 3 con el valor de: ' +
+							num3 +
+							'<br>'
+					);
+
+				if (num1 < num2 && num1 < num3)
+					document.write(
+						'El menor de los tres números es el 1 con el valor de: ' +
+							num1 +
+							'<br>'
+					);
+				else if (num2 < num1 && num2 < num3)
+					document.write(
+						'El menor de los tres números es el 2 con el valor de: ' +
+							num2 +
+							'<br>'
+					);
+				else if (num3 < num1 && num3 < num2)
+					document.write(
+						'El menor de los tres números es el 3 con el valor de: ' +
+							num3 +
+							'<br>'
+					);
+			}
+		</script>
+	</body>
+</html>

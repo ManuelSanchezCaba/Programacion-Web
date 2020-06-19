@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parte #1</title>
+	</head>
+	<body>
+		<h1>JavaScript no obstructivo</h1>
+		<p>
+			<b>JavaScript no obstructivo</b> es un enfoque general para el uso de
+			JavaScript en páginas web . Aunque el término no se define formalmente,
+			sus principios básicos son generalmente:
+		</p>
+		<li>
+			La separación de la funcionalidad (la "capa de comportamiento") a partir
+			de una página web estructura / contenido y la presentación.
+		</li>
+		<li>
+			Las mejores prácticas para evitar los problemas de programación
+			tradicional JavaScript (como navegador inconsistencias y falta de
+			escalabilidad ).
+		</li>
+		<li>
+			Mejora progresiva para apoyar los agentes de usuario pueden no soportar la
+			funcionalidad avanzada JavaScript.
+		</li>
+
+		<p><b> Un ejemplo sería el siguiente: </b></p>
+
+		<div>
+			<label for="nombre">Ingrese su nombre:</label>
+			<input type="text" name="nombre" id="nombre" />
+			<button type="submit" onclick="saludar()">Click</button>
+		</div>
+
+		<div id="saludo"></div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,3 @@
+El valor null en javascript es un "literal" que representa un valor nulo o vacío. Este es uno de los valores primitivos que tiene javascript.
+
+El undefined es una propiedad de un objeto global de javascript que representa cuando un valor no ha devuelto nada. También puede darse el caso que de undefined si no se le ha asignado algún valor a una variable.
