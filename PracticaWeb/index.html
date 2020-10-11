@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Programacion Web</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css"
+			integrity="sha256-Z12agm4mw1C2s2sXTx0wUlgmQdWqv1HCc/vgtpB0r9M="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+			integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+			crossorigin="anonymous"
+		/>
+		<script src="script.js"></script>
+	</head>
+	<body onload="charge()">
+		<div class="container" style="width: 800px;">
+			<h1>Formulario de Enrolamiento</h1>
+
+			<div class="form-group">
+				<label for="namefield">Nombre Completo</label>
+				<input
+					type="text"
+					class="form-control"
+					id="namefield"
+					placeholder="Entre su nombre completo"
+					required
+				/>
+			</div>
+			<div class="form-group">
+				<label for="telfield">Teléfono</label>
+				<input
+					type="tel"
+					class="form-control"
+					id="telfield"
+					placeholder="(809) 555-5555"
+					required
+				/>
+			</div>
+			<div class="form-group">
+				<label for="emailfield">Correo Electrónico</label>
+				<input
+					type="email"
+					class="form-control"
+					id="emailfield"
+					placeholder="info@correo.com"
+					required
+				/>
+			</div>
+			<div class="form-group">
+				<label for="metodofield">Seleccione Método de Pago:</label>
+				<select id="metodofield" class="form-control">
+					<option value="efectivo">Efectivo</option>
+					<option value="tarjeta">Tarjeta de Crédito</option>
+					<option value="transferencia">Transferencia</option>
+				</select>
+			</div>
+			<button class="btn btn-primary" onclick="enrolar()">Enrolar</button>
+
+			<br />
+			<br />
+			<h2>Personas enroladas: <span id="contador">0</span></h2>
+			<table id="tabladatos" class="table table-dark animated flipInY">
+				<thead>
+					<th>Nombre Completo</th>
+					<th>Teléfono</th>
+					<th>Correo Electrónico</th>
+					<th>Método de Pago</th>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</body>
+</html>
